@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects | Yash Portfolio</title>
+
+  <!-- Bootstrap + FontAwesome + AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <style>
+    body {
+      background: #0f172a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+
+    .filter-buttons .filter-btn {
+      margin: 5px;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 5px;
+      background: #1e40af;
+      color: #fff;
+      transition: 0.3s ease;
+    }
+
+    .filter-buttons .filter-btn.active,
+    .filter-buttons .filter-btn:hover {
+      background: #3b82f6;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content h5 {
+      font-weight: 600;
+      color: #3b82f6;
+    }
+
+    .btn-sm i {
+      margin-right: 5px;
+    }
+
+    /* Decorative Background Blobs */
+    .bg-blobs {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.3;
+      animation: moveBlobs 20s infinite alternate ease-in-out;
+    }
+
+    .blob1 {
+      width: 400px;
+      height: 400px;
+      background: #3b82f6;
+      top: 10%;
+      left: 5%;
+    }
+
+    .blob2 {
+      width: 300px;
+      height: 300px;
+      background: #9333ea;
+      top: 50%;
+      left: 70%;
+    }
+
+    .blob3 {
+      width: 500px;
+      height: 500px;
+      background: #14b8a6;
+      top: 80%;
+      left: -10%;
+    }
+
+    @keyframes moveBlobs {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(30px, -50px) scale(1.2);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Decorative Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+  <div class="container mt-4">
+    <a href="index.html" class="btn btn-outline-light">
+      <i class="fas fa-arrow-left me-2"></i>Back to Home
+    </a>
+  </div>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Projects</h2>
+
+
+      <!-- Project Grid -->
+      <div class="row project-grid">
+        <!-- 1. React Portfolio -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="/assets/images/corso.png" alt="React Portfolio" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Corso E-learning Platform</h5>
+              <p>
+                Built with JavaScript,Html,Css,Bootstrap, and
+                animations.
+              </p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://corso-e-learning-website.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Corso_e-learning_website" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Weather App -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/weather.png" alt="Weather App" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Weather App</h5>
+              <p>Responsive weather application using OpenWeather API.</p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://weather-app-five-rose-27.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Weather_app" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Expense Tracker -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/nurse.png" alt="Expense Tracker" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Nursing Staffing Solutions</h5>
+              <p>Freelancing
+                project for a nursing staffing company.</p>
+              </p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://nursesstaffingsolutions.com.au//" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Expense Tracker -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/expense-tracker.png" alt="Expense Tracker" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Expense Tracker</h5>
+              <p>Track income/expenses using JS and localStorage.</p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://expense-tracker-iota-beige.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Expense-Tracker" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Password Generator -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/password.png" alt="Password Generator" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Password Generator</h5>
+              <p>
+                Secure password generator with custom options & copy feature.
+              </p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://password-generator-plum-two.vercel.app/" target="_blank"
+                  class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/password_generator" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- 9. To-Do App -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/to-do.png" alt="To-Do App" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>To-Do List</h5>
+              <p>Daily planner with local data storage and Bootstrap UI.</p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://to-do-theta-neon.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/To_do" target="_blank" class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- 9. Landing Page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/landing.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Landing Page</h5>
+            <p>
+              A simple landing page for a website using HTML, CSS, and Bootstrap.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://yashupadhyay321.github.io/Landing_Website/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Landing_Website" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+        <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/login.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Login/Logout Page</h5>
+            <p>
+              A simple login/logout page using HTML, CSS, and Bootstrap.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://yashupadhyay321.github.io/Login-Register//" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Login-Register" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/uber.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Uber Clone frontend</h5>
+            <p>
+              A  Uber clone frontend using HTML, CSS, and Bootstrap.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://yashupadhyay321.github.io/uber_clone/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/uber_clone" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+       <!-- 12 fitness -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/fitness.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Fitness Gym website</h5>
+            <p>
+              A simple fitness gym website using HTML, CSS, and Bootstrap.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://preeminent-cascaron-3c9cce.netlify.app/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Fitness_website" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- 13 Pc Building and parts -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/product.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>
+              PC Building and Parts</h5>
+            </h5>
+            <p>
+              A simple PC building and parts website using HTML, CSS, and Bootstrap.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://yashupadhyay321.github.io/Login-Register//" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Login-Register" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/joke.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Random Joke Generator</h5>
+            <p>
+              A simple random joke generator using HTML, CSS, and JavaScript.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://yashupadhyay321.github.io/Joke_Generator/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Joke_Generator" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/image.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Live Image Preview</h5>
+            <p>
+              A simple live image preview using HTML, CSS, and JavaScript.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://image-preview-eight.vercel.app/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/image-preview" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/word.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Word Counter</h5>
+            <p>
+              A word counter using HTML, CSS, and JavaScript.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://word-counter-phi-cyan.vercel.app/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Word_Counter" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/quiz.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Quiz web application</h5>
+            <p>
+              A simple quiz web application using HTML, CSS, and JavaScript.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://yashupadhyay321.github.io/Quiz_app/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Quiz_app" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+   <!-- 11 Login page -->
+      <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+        <div class="project-card">
+          <img src="assets/images/meds.png" alt="Landing Page" class="img-fluid" />
+          <div class="project-content p-3">
+            <h5>Medical Store</h5>
+            <p>
+              A  medical store web application using HTML, CSS, and JavaScript.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <a href="https://67d85b7da6df8d73cf738922--musical-mandazi-d7f24c.netlify.app/" target="_blank"
+                class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+              </a>
+              <a href="https://github.com/YashUpadhyay321/Medical_equipment" target="_blank"
+                class="btn btn-sm btn-outline-light">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+  AOS.init({
+    offset: 100, // trigger earlier (default is 120)
+    delay: 0,    // no delay
+    duration: 600, // speed of animation
+    easing: 'ease-in-out',
+    once: true,  // animation happens only once
+    mirror: false // do not animate again on scroll back
+  });
+</script>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>Y</text></svg>">
+
+  <title>Yash Upadhyay | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Meta Basics -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yash Upadhyay - Full Stack Developer & UI/UX Designer Portfolio" />
+  <meta name="author" content="Yash Upadhyay" />
+  <meta name="keywords"
+    content="Full Stack Developer, UI UX Designer, Web Developer, React, Bootstrap, Yash Upadhyay" />
+
+  <!-- Social Sharing (Open Graph) -->
+  <meta property="og:title" content="Yash Upadhyay | Full Stack Developer" />
+  <meta property="og:description"
+    content="Explore my web development and UI/UX design projects. Let's build the future together!" />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/og-image.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <!-- Branded Logo -->
+      <a class="navbar-brand" href="#">
+        <span class="brand-name">Yash<span class="dot">.</span></span>
+      </a>
+
+      <!-- Toggle for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-2 gap-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#expertise">Expertise</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <h1>I'm <span class="highlight">Yash Upadhyay</span></h1>
+      <h2>FULL STACK DEVELOPER & UI DESIGNER</h2>
+      <p>
+        I design and develop digital experiences that blend clean code with
+        beautiful design — building web solutions people actually love to use.
+      </p>
+      <a href="#contact" class="btn btn-primary custom-btn me-2 mb-3">Contact Me</a>
+      <a href="assets/cv.pdf" class="btn btn-outline-light custom-btn mb-3" onclick="openAndDownload(event)">
+        View  CV
+      </a>
+
+    </div>
+  </section>
+  <!-- ✅ Skills Section -->
+  <section class="skills-ticker-section">
+    <div class="skills-ticker-bg"></div>
+    <div class="container text-center">
+      <h2 class="skills-heading">My Skills</h2>
+      <div class="skills-ticker">
+        <div class="ticker-track">
+          <!-- ✅ Ordered Skills -->
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-react"></i></div>
+            <span>React</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-js-square"></i></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-php"></i></div>
+            <span>PHP</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fas fa-database"></i></div>
+            <span>SQL</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-html5"></i></div>
+            <span>HTML5</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-css3-alt"></i></div>
+            <span>CSS3</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-bootstrap"></i></div>
+            <span>Bootstrap</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-python"></i></div>
+            <span>Python</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-shopify"></i></div>
+            <span>Shopify</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-figma"></i></div>
+            <span>Figma</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-github"></i></div>
+            <span>GitHub</span>
+          </div>
+
+          <!-- ✅ Duplicate for seamless loop -->
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-react"></i></div>
+            <span>React</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-js-square"></i></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-php"></i></div>
+            <span>PHP</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fas fa-database"></i></div>
+            <span>SQL</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-html5"></i></div>
+            <span>HTML5</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-css3-alt"></i></div>
+            <span>CSS3</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-bootstrap"></i></div>
+            <span>Bootstrap</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-python"></i></div>
+            <span>Python</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-shopify"></i></div>
+            <span>Shopify</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-figma"></i></div>
+            <span>Figma</span>
+          </div>
+          <div class="ticker-item">
+            <div class="icon-badge"><i class="fab fa-github"></i></div>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- About Text -->
+        <div class="col-md-7 mb-4 mb-md-0" data-aos="fade-right">
+          <h2 class="section-title mb-3">About Me</h2>
+          <p>
+            Hi, I'm <strong>Yash Upadhyay</strong>, a passionate <span class="text-highlight">Full Stack
+              Developer</span> and <span class="text-highlight">UI/UX Designer</span> based in Delhi, India. I enjoy
+            building elegant, efficient, and intuitive digital products that solve real-world problems.
+          </p>
+          <p>
+            I'm skilled in technologies like <strong>React, JavaScript, Bootstrap</strong>, and also design interfaces
+            using <strong>Figma</strong>. Whether it's coding complex web applications or designing beautiful UIs, I
+            bring dedication, creativity, and consistency to the table.
+          </p>
+          <p>
+            I recently completed my <strong>BCA</strong> from IP University and I'm always exploring new trends in
+            development and design.
+          </p>
+          <a href="#projects" class="btn btn-gradient mt-3">
+            <i class="fas fa-rocket me-2"></i>View My Projects
+          </a>
+        </div>
+
+        <!-- About Illustration or Image -->
+        <div class="col-md-5 text-center" data-aos="fade-left">
+          <img src="assets/images/about.gif" alt="About Illustration" class="img-fluid about-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Projects</h2>
+
+
+
+      <!-- Project Grid -->
+      <div class="row project-grid">
+        <!-- 1. React Portfolio -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="/assets/images/corso.png" alt="React Portfolio" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Corso E-learning Platform</h5>
+              <p>
+                Built with JavaScript,Html,Css,Bootstrap, and
+                animations.
+              </p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://corso-e-learning-website.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Corso_e-learning_website" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Weather App -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/weather.png" alt="Weather App" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Weather App</h5>
+              <p>Responsive weather application using OpenWeather API.</p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://weather-app-five-rose-27.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Weather_app" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Expense Tracker -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/expense-tracker.png" alt="Expense Tracker" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Expense Tracker</h5>
+              <p>Track income/expenses using JS and localStorage.</p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://expense-tracker-iota-beige.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Expense-Tracker" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Password Generator -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/password.png" alt="Password Generator" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Password Generator</h5>
+              <p>
+                Secure password generator with custom options & copy feature.
+              </p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://password-generator-plum-two.vercel.app/" target="_blank"
+                  class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/password_generator" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 12 fitness -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/fitness.png" alt="Landing Page" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>Fitness Gym website</h5>
+              <p>
+                A simple fitness gym website using HTML, CSS, and Bootstrap.
+              </p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://preeminent-cascaron-3c9cce.netlify.app/" target="_blank"
+                  class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/Fitness_website" target="_blank"
+                  class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- 9. To-Do App -->
+        <div class="col-md-4 mb-4 project-item dev" data-aos="fade-up">
+          <div class="project-card">
+            <img src="assets/images/to-do.png" alt="To-Do App" class="img-fluid" />
+            <div class="project-content p-3">
+              <h5>To-Do List</h5>
+              <p>Daily planner with local data storage and Bootstrap UI.</p>
+              <div class="d-flex justify-content-between mt-3">
+                <a href="https://to-do-theta-neon.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                </a>
+                <a href="https://github.com/YashUpadhyay321/To_do" target="_blank" class="btn btn-sm btn-outline-light">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="text-center mt-4">
+        <a href="project.html" class="btn btn-gradient">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="certifications" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Certifications</h2>
+
+      <div class="swiper cert-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <!-- Certificate Card 1 -->
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/full-stack.jpg" alt="full-stack" class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">Full Stack Developer</h6>
+              <p class="small  mb-0">July 2024-Feb 2025</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/ui-ux .png" alt="Python Cert" class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">UI/UX Certification</h6>
+              <p class="small  mb-0">April-July 2025</p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/codsoft-internship.jpg" alt="JavaScript Certificate"
+                class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">CodeSoft Virtual Internship</h6>
+            </div>
+          </div>
+
+          <!-- Certificate Card 3 -->
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/research-paper.png" alt="Python Cert" class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">Research Paper </h6>
+              <p class="small  mb-0">IBM · Feb 2024</p>
+            </div>
+          </div>
+          <!-- Certificate Card 3 -->
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/mooc-data-eng.png" alt="Python Cert" class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">Mooc Certificate of Data Engineer</h6>
+            </div>
+          </div>
+          <!-- Certificate Card 3 -->
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/dbms-nptel.jpg" alt="Python Cert" class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">Mooc Certificate of DBMS</h6>
+
+            </div>
+          </div>
+          <!-- Certificate Card 3 -->
+          <div class="swiper-slide">
+            <div class="cert-card text-center p-4">
+              <img src="assets/images/coordinator.png" alt="Python Cert" class="img-fluid cert-img mb-3">
+              <h6 class="fw-semibold mb-1">Coordinator in College it fest</h6>
+
+            </div>
+          </div>
+
+          <!-- Add more swiper-slide certificates here -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Expertise Section -->
+  <section id="expertise" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">
+        My Expertise
+      </h2>
+      <div class="row text-center">
+        <!-- Frontend -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="expertise-card p-4 shadow-sm h-100">
+            <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+            <h5 class="mb-2">Frontend Development</h5>
+            <p>HTML, CSS, JavaScript, Bootstrap, React, AOS</p>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="expertise-card p-4 shadow-sm h-100">
+            <i class="fas fa-server fa-3x mb-3 text-warning"></i>
+            <h5 class="mb-2">Backend Development</h5>
+            <p>Node.js,PHP,MySQL</p>
+          </div>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="expertise-card p-4 shadow-sm h-100">
+            <i class="fas fa-pencil-ruler fa-3x mb-3 text-success"></i>
+            <h5 class="mb-2">UI/UX Design</h5>
+            <p>Figma, Wireframes, Design Systems, Prototyping</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Let's Connect</h2>
+
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Direct Contact Info -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-details p-4 rounded glass-box">
+            <h4 class="mb-4 text-info">Contact Information</h4>
+
+            <p class="mb-3">
+              <i class="fas fa-envelope me-2 text-info"></i>
+              <a href="https://mail.google.com/mail/?view=cm&to=upadhyayyash0201@gmail.com"
+                class="text-light text-decoration-none" target="_blank" rel="noopener noreferrer">
+                upadhyayyash0201@gmail.com
+              </a>
+            </p>
+
+
+            <p class="mb-3">
+              <i class="fas fa-phone me-2 text-info"></i>
+              <a href="tel:+918882164021" class="text-light text-decoration-none">+91 8882164021</a>
+            </p>
+
+            <p class="mb-3">
+              <i class="fas fa-map-marker-alt me-2 text-info"></i>
+              Delhi, India
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <form id="contactForm" class="contact-form p-4 rounded glass-box">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" placeholder="Your name" required />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Your email" required />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea name="message" rows="5" class="form-control" placeholder="Your message..." required></textarea>
+            </div>
+
+            <div id="form-status" class="text-success mb-3" style="display: none;">✅ Message sent successfully!</div>
+
+            <button type="submit" class="btn btn-gradient w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Footer ====== -->
+  <footer class="footer-section pt-5 pb-3">
+    <div class="container text-center text-light">
+      <h4 class="mb-3">Yash Upadhyay</h4>
+
+      <!-- Social Icons -->
+      <div class="social-icons mb-3">
+        <a href="https://github.com/YOUR_USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&to=upadhyayyash0201@gmail.com" target="_blank"
+          rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <p class="mb-0">&copy; 2025 Yash Upadhyay. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ====== Scroll to Top Button ====== -->
+  <button id="scrollTopBtn" class="scroll-top-btn">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 100, // trigger earlier (default is 120)
+      delay: 0,    // no delay
+      duration: 600, // speed of animation
+      easing: 'ease-in-out',
+      once: true,  // animation happens only once
+      mirror: false // do not animate again on scroll back
+    });
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".cert-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        992: { slidesPerView: 3 },
+      },
+    });
+  </script>
+  <script>
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+
+      fetch("https://formspree.io/f/xqapzqqo", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            status.style.display = "block";
+            status.classList.remove("text-danger");
+            status.classList.add("text-success");
+            status.innerText = "✅ Message sent successfully!";
+            form.reset();
+          } else {
+            response.json().then(data => {
+              status.style.display = "block";
+              status.classList.remove("text-success");
+              status.classList.add("text-danger");
+              status.innerText =
+                data.errors && data.errors.length > 0
+                  ? "❌ " + data.errors[0].message
+                  : "❌ Oops! Something went wrong.";
+            });
+          }
+        })
+        .catch(error => {
+          status.style.display = "block";
+          status.classList.remove("text-success");
+          status.classList.add("text-danger");
+          status.innerText = "❌ Network error. Please try again.";
+        });
+    });
+  </script>
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  <script>
+function openAndDownload(e) {
+  e.preventDefault(); // stop normal link behavior
+  
+  // 1. Open in new tab
+  window.open('assets/cv.pdf', '_blank');
+  
+  // 2. Trigger download
+  const link = document.createElement('a');
+  link.href = 'assets/cv.pdf';
+  link.download = 'cv.pdf'; // rename if needed
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+
+
+</body>
+
+</html>
