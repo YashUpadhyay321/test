@@ -525,3 +525,61 @@ body {
 .scroll-top-btn:hover {
   background: #2563eb;
 }
+/* ========================= */
+/* 📱 Mobile Responsiveness */
+/* ========================= */
+@media (max-width: 768px) {
+
+  /* Hero section adjustments */
+  .hero {
+    padding: 100px 15px 120px; /* less padding on mobile */
+  }
+
+  .hero h1 {
+    font-size: 32px; /* smaller text */
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  /* Hide big shapes on small screens */
+  .shape-1, .shape-2, .shape-3 {
+    display: none;
+  }
+
+  /* About section */
+  .about-section {
+    padding: 50px 15px;
+    text-align: center;
+  }
+  .about-section img {
+    margin-bottom: 20px;
+  }
+
+  /* Skills ticker */
+  .ticker-track {
+    animation: ticker 20s linear infinite;
+    gap: 20px;
+  }
+
+  /* Project cards */
+  .project-card img {
+    height: auto; /* let images resize naturally */
+  }
+
+  /* Contact form */
+  .contact-form .form-control {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-section h4 {
+    font-size: 18px;
+  }
+}
